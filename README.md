@@ -17,6 +17,8 @@ Database: h2 (tested in postgres)
 
 Java 14
 
+Packaging: War
+
 ## Camunda BPM Modules
 WebApp
 
