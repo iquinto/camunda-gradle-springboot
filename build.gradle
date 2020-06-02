@@ -1,5 +1,5 @@
 plugins {
-	id 'org.springframework.boot' version '2.2.5.RELEASE'
+	id 'org.springframework.boot' version "$springbootVersion"
 	id 'io.spring.dependency-management' version '1.0.9.RELEASE'
 	id 'java'
 	id 'war'
@@ -7,7 +7,7 @@ plugins {
 
 group = 'cat.dipta'
 version = '0.0.1-SNAPSHOT'
-sourceCompatibility = '14'
+sourceCompatibility = "$javaVersion"
 
 repositories {
 	mavenCentral()
@@ -20,10 +20,10 @@ dependencies {
 	compile group: 'org.springframework.boot', name: 'spring-boot-starter-jdbc', version: '2.3.0.RELEASE'
 
 	// Camunda
-	compile group: 'org.camunda.bpm.springboot', name: 'camunda-bpm-spring-boot-starter', version: '3.4.3'
-	compile group: 'org.camunda.bpm.springboot', name: 'camunda-bpm-spring-boot-starter-rest', version: '3.4.3'
-	compile group: 'org.camunda.bpm.springboot', name: 'camunda-bpm-spring-boot-starter-webapp', version: '3.4.3'
-	testCompile group: 'org.camunda.bpm.springboot', name: 'camunda-bpm-spring-boot-starter-test', version: '3.4.3'
+	compile group: 'org.camunda.bpm.springboot', name: 'camunda-bpm-spring-boot-starter', version: "$camundaVersion"
+	compile group: 'org.camunda.bpm.springboot', name: 'camunda-bpm-spring-boot-starter-rest', version: "$camundaVersion"
+	compile group: 'org.camunda.bpm.springboot', name: 'camunda-bpm-spring-boot-starter-webapp', version: "$camundaVersion"
+	testCompile group: 'org.camunda.bpm.springboot', name: 'camunda-bpm-spring-boot-starter-test', version: "$camundaVersion"
 
 	runtimeOnly 'com.h2database:h2'
 	runtimeOnly 'org.postgresql:postgresql'
