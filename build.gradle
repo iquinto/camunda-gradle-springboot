@@ -19,10 +19,11 @@ dependencies {
 	compile group: 'org.springframework.boot', name: 'spring-boot-starter-data-jpa', version: '2.3.0.RELEASE'
 	compile group: 'org.springframework.boot', name: 'spring-boot-starter-jdbc', version: '2.3.0.RELEASE'
 
+	// Camunda
 	compile group: 'org.camunda.bpm.springboot', name: 'camunda-bpm-spring-boot-starter', version: '3.4.3'
-    compile group: 'org.camunda.bpm.springboot', name: 'camunda-bpm-spring-boot-starter-rest', version: '3.4.3'
-    compile group: 'org.camunda.bpm.springboot', name: 'camunda-bpm-spring-boot-starter-webapp', version: '3.4.3'
-    testCompile group: 'org.camunda.bpm.springboot', name: 'camunda-bpm-spring-boot-starter-test', version: '3.4.3'
+	compile group: 'org.camunda.bpm.springboot', name: 'camunda-bpm-spring-boot-starter-rest', version: '3.4.3'
+	compile group: 'org.camunda.bpm.springboot', name: 'camunda-bpm-spring-boot-starter-webapp', version: '3.4.3'
+	testCompile group: 'org.camunda.bpm.springboot', name: 'camunda-bpm-spring-boot-starter-test', version: '3.4.3'
 
 	runtimeOnly 'com.h2database:h2'
 	runtimeOnly 'org.postgresql:postgresql'
