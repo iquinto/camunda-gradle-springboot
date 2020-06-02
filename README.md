@@ -5,9 +5,7 @@ Camunda + Springboot + Gradle
 ./gradlew bootRun
 
 url: localhost:8084/camunda
-
 user: demo
-
 password: admin
 
 ## Details
@@ -18,9 +16,6 @@ Java 14
 ## Camunda BPM Modules
 WebApp
 REST-API
-
-
-
 
 ## Source
 https://start.camunda.com/
