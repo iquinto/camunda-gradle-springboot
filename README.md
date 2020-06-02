@@ -4,7 +4,7 @@ Camunda + Springboot + Gradle
 ## Execution
 ./gradlew bootRun
 
-url: localhost:8084/camunda
+url: http://localhost:8084/camunda
 
 user: demo
 
