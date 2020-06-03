@@ -15,18 +15,20 @@ repositories {
 
 dependencies {
 	//implementation 'org.springframework.boot:spring-boot-starter-web'
-	//providedRuntime 'org.springframework.boot:spring-boot-starter-tomcat'
+	providedRuntime 'org.springframework.boot:spring-boot-starter-tomcat'
 	compile group: 'org.springframework.boot', name: 'spring-boot-starter-data-jpa', version: '2.3.0.RELEASE'
 	compile group: 'org.springframework.boot', name: 'spring-boot-starter-jdbc', version: '2.3.0.RELEASE'
 
-	// Camunda
+	//Camunda
 	compile group: 'org.camunda.bpm.springboot', name: 'camunda-bpm-spring-boot-starter', version: "$camundaVersion"
 	compile group: 'org.camunda.bpm.springboot', name: 'camunda-bpm-spring-boot-starter-rest', version: "$camundaVersion"
 	compile group: 'org.camunda.bpm.springboot', name: 'camunda-bpm-spring-boot-starter-webapp', version: "$camundaVersion"
-	testCompile group: 'org.camunda.bpm.springboot', name: 'camunda-bpm-spring-boot-starter-test', version: "$camundaVersion"
+	compile "com.oracle.ojdbc:ojdbc8:19.3.0.0"
+	//compile "com.oracle:ojdbc7:12.1.0.2"
 
-	runtimeOnly 'com.h2database:h2'
-	runtimeOnly 'org.postgresql:postgresql'
+	// Test
+	testCompile group: 'org.camunda.bpm.springboot', name: 'camunda-bpm-spring-boot-starter-test', version: "$camundaVersion"
+	testCompile 'com.h2database:h2'
 
 	testImplementation('org.springframework.boot:spring-boot-starter-test') {
 		exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'

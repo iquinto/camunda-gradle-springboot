@@ -3,11 +3,13 @@ Camunda + Springboot + Gradle
 
 
 ## Details
-Camunda version: 7.11
+Spring-Boot:  (v2.1.13.RELEASE)
 
-Sprinboot version: 2.1.13.RELEASE
+Camunda BPM: (v7.11.0)
 
-Java 11 (local azul 11.0.7)
+Camunda BPM Spring Boot Starter: (v3.3.9)
+
+Java 8
 
 Gradle: 6.4.1
 
